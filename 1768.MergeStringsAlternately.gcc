@@ -1,0 +1,36 @@
+class Solution {
+public:
+    string mergeAlternately(string word1, string word2) {
+        
+
+        string fullword=""; //abcd  pq
+
+        if(word1.size()>word2.size()){
+            for(int i=0,left1=0,left2=0;i<word1.size()+word2.size();i++){
+                if(i%2==0 && left1<word1.size())
+                fullword+=word1[left1++];
+                else if(i%2==1 && left2<word2.size())
+                fullword+=word2[left2++];
+                else
+                fullword+=word1[left1++];
+            }
+        }
+        else{
+            for(int i=0,left1=0,left2=0;i<word1.size()+word2.size();i++){
+                if(i%2==0 && left1<word1.size())
+                fullword+=word1[left1++];
+                else if(i%2==1 && left2<word2.size())
+                fullword+=word2[left2++];
+                else
+                fullword+=word2[left2++];
+            }
+
+        }
+        
+                
+            
+        
+
+    return fullword;
+    }
+};
