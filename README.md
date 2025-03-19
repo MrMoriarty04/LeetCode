@@ -1,3 +1,3 @@
 # LeetCode
 
-hi there i am solving different leetcode problems here and share my answers
+hi there I am solving different leetcode problems here and sharing my answers
